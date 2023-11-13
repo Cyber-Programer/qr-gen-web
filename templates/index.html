@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr-code gen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .man {
+            
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.278);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        #favcolor{
+            margin:10px 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="man">
+        <h2>This is text to Qr-code gen..</h2>
+        <form action="/" method="post">
+            <label for="text">Enter your Text here:</label>
+            <input type="text" id="text" name="text" placeholder="Your text">
+            
+            <label for="color">Chose background color</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            
+            <label for="color">Chose fill_color color</label>
+            <input type="color" id="fontcolor" name="fontcolor" value="#ff0000">
+
+            <input type="submit" value="Generate QR Code">
+        </form>
+    </div>
+</body>
+</html>
